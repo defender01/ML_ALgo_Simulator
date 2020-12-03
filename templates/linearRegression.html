@@ -1,0 +1,125 @@
+<html>
+<head>
+  <title>
+    ML Algo Simulator
+  </title>
+  <link rel="stylesheet" href="linearRegression.css">
+  <!-- ref to bootstrap cdn -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- ref to fontawesome cdn -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCUW8TF3Rc_aC_FdVJqt4mqKRM-sJj2mjE",
+    authDomain: "mlalgosimulator.firebaseapp.com",
+    databaseURL: "https://mlalgosimulator.firebaseio.com",
+    projectId: "mlalgosimulator",
+    storageBucket: "mlalgosimulator.appspot.com",
+    messagingSenderId: "717217949100"
+  };
+  firebase.initializeApp(config);
+  </script>
+
+</head>
+<body>
+
+  <!-- navigation bar -->
+  <header>
+    <div class="logo">ML Algo Simulator
+    </div>
+    <nav>
+      <ul>
+        <li><a href="http://localhost:8000/templates/home.html">Home</a></li>
+        <li><a href="http://localhost:8000/templates/gradientDescent.html">Gradient Decent</a></li>
+        <li><a href="http://localhost:8000/templates/linearRegression.html" class="active">Linear Regression</a></li>
+        <li><a href="http://localhost:8000/templates/polynomialRegression.html">Polynomial Regression</a></li>
+        <li><a href="http://localhost:8000/templates/logisticRegression.html">Logistic Regression</a></li>
+        <!-- <li><a href="http://localhost:8000/templates/kmeans.html">K means</a></li> --> -->
+        <!-- <li><a href="#">Digit Recognition</a></li> -->
+        <li><button onclick="logout()" id="logoutID">Log Out</button></li>
+        <li><button onclick="loginPageOpen()" id="loginID">Log in</button></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+  </header>
+
+  <!-- animation container -->
+  <div class="simulation">
+
+    <h2 class="animation-title">Linear Regression simulation:</h2>
+    <div class="checkBoxContainer fullWidth">
+      <h2>Enter simulation choice:</h2>
+      <div>
+        <input type="radio" id="defaultID"  value="default" checked>
+        <label for="defaultID">Default</label>
+      </div>
+
+      <div>
+        <input type="radio" id="customizedID"  value="customized">
+        <label for="customizedID">Customized</label>
+      </div>
+      <div class="fullWidth">
+        <button class="normalButton" onclick="enterData()">Enter Data</button>
+      </div>
+    </div>
+
+    <div class="simulationImageContainer">
+      <img class="eye-animation half left" id="simulationId"
+      src="http:\\127.0.0.1:8000\GradientDescent\primaryImage.png"
+      alt="blinking eye animation"/>
+      <img class="eye-animation half right" id="costfunctionID"
+      src="http:\\127.0.0.1:8000\GradientDescent\primaryImage.png"
+      alt="blinking eye animation"/>
+
+    </div>
+
+
+
+
+    <button type="button" class="normalButton center" onclick="startSimulation()">Start simulation</button>
+
+  </div>
+
+  <div class="formContainer">
+
+    <h3>Enter different data to understand properly</h3>
+
+    <div class="container">
+      <form>
+        <h3>In our algorithm learning rate, alpha = 0.01</h3>
+        <label for="durationID">Enter simulation duration(in seconds):</label>
+        <input type="text" id="durationID">
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('.menu-toggle').click(function(){
+      $('nav').toggleClass('active')
+    })
+  })
+
+  </script>
+
+  <script src="linearRegression.js"></script>
+
+
+</body>
+</html>

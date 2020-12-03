@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Montserrat|Roboto');
+
+body{
+    background-color: #ffffff;
+    /* height: 100vh;   <! 100%>
+    background-size: cover;
+    background-position: center; */
+    }
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background: #081551;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+header .logo{
+  color: #fff;
+  font-family: "Roboto",sans-serif;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  float: left;
+  font-weight: bold;
+}
+header nav{
+  float: right;
+}
+header nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav ul li{
+  list-style: none;
+}
+header nav ul li a{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+header nav ul li a:hover,header nav ul li a.active{
+  /* font-weight: bold; */
+  background: #11a2fc;
+}
+/*  logout button*/
+nav button{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  margin: 5 0 5;
+  background: #18309b;
+  border: 1;
+  border-color: #0f2a54;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+nav button:hover,.nav button:active{
+  background: #11a2fc;
+}
+.menu-toggle{
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  display: none;
+}
+@media(max-width: 991px){
+   header{
+     padding: 0 20px;
+   }
+   .menu-toggle{
+     display: block;
+   }
+   header nav{
+     position: absolute;
+     width: 100%;
+     height: calc(100vh-50px);
+     background: #333;
+     top: 50px;
+     left: -100%;
+     transition: 0.5s;
+   }
+   header nav.active{
+     left: 0;
+   }
+   header nav ul{
+     display: block;
+     text-align: center;
+   }
+   header nav ul li a{
+     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   }
+}
+
+
+.loginPage{
+    width: 360px;
+    padding: 200px 0 0;
+    margin: auto;
+}
+
+.form{
+    position: relative;
+    z-index: 1;
+    background: #2e57f7;
+    max-width: 360px;
+    padding: 45px;
+    margin: 0 auto 100px;
+    text-align: center;
+}
+
+.form input{
+  font-family: "Roboto",sans-serif;
+  outline: 1;
+  background: #f4f4f4;
+  width: 100%;
+  border: 0;
+  margin: 10 0 0;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.form button{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  margin: 10 0 0;
+  background: #0f0e75;
+  width: 100%;
+  border: 1;
+  border-color: #0f2a54;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 5px;
+
+}
+
+.form button:hover,.form button:active{
+  background: #1312a8;
+}
+
+.form .message{
+  font-size: 12px;
+  font-family: 'Montserrat', cursive;
+}
+
+.form .message a{
+  color: #0f0e9e;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.form .signupForm{
+  display: none;
+}
+
+.userLoginState{
+  margin: 100 20 20 100;
+  font-family: "Roboto", sans-serif;
+  color: #00000;
+}
+
+textarea
+{
+resize: none;
+overflow-y: scroll;
+height:300px;
+margin: 40 10 10;
+}
+.half{
+  width: 50%;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.normalButton{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  margin: 10 0 0;
+  background: #0f0e75;
+  border: 1;
+  border-color: #0f2a54;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10 10 10 10;
+  border-radius: 5px;
+}
+.normalButton:hover,.normalButton:active{
+  background: #11a2fc;
+}
+
+.fullWidth{
+  width: 100%;
+}
+.fullHeight{
+  height: 100%;
+}
+.center{
+  margin: auto;
+}

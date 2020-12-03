@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Montserrat|Roboto');
+
+body{
+    background-color: #ffffff;
+    /* height: 100vh;   <! 100%>
+    background-size: cover;
+    background-position: center; */
+    }
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background: #081551;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+header .logo{
+  color: #fff;
+  font-family: "Roboto",sans-serif;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  float: left;
+  font-weight: bold;
+}
+header nav{
+  float: right;
+}
+header nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav ul li{
+  list-style: none;
+}
+header nav ul li a{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+header nav ul li a:hover,header nav ul li a.active{
+  /* font-weight: bold; */
+  background: #11a2fc;
+}
+/*  logout button*/
+nav button{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  margin: 5 0 5;
+  background: #18309b;
+  border: 1;
+  border-color: #0f2a54;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+nav button:hover,.nav button:active{
+  background: #11a2fc;
+}
+.menu-toggle{
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  display: none;
+}
+@media(max-width: 991px){
+   header{
+     padding: 0 20px;
+   }
+   .menu-toggle{
+     display: block;
+   }
+   header nav{
+     position: absolute;
+     width: 100%;
+     height: calc(100vh-50px);
+     background: #333;
+     top: 50px;
+     left: -100%;
+     transition: 0.5s;
+   }
+   header nav.active{
+     left: 0;
+   }
+   header nav ul{
+     display: block;
+     text-align: center;
+   }
+   header nav ul li a{
+     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   }
+}
+
+.half{
+  width: 50%;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.normalButton{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  margin: 10 0 0;
+  background: #0f0e75;
+  border: 1;
+  border-color: #0f2a54;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10 10 10 10;
+  border-radius: 5px;
+}
+.normalButton:hover,.normalButton:active{
+  background: #11a2fc;
+}
+
+.centerDiv {
+  padding: 30px;
+    display: inline;
+  margin-left: 100px;
+}
+
+.fullWidth{
+  width: 100%;
+}
+.fullHeight{
+  height: 100%;
+}
+.center{
+  margin: auto;
+}
+.animation-title {
+  margin-top: 100px;
+  font-family: sans-serif;
+  text-align: center;
+  border: 2px;
+  border-color: black;
+  color: #27235b;
+}
+
+.eye-animation {
+  width: 45%;
+  display: block;
+  margin: auto;
+}
+.simulation{
+  height: 800px;
+  width: 100%;
+}
+.simulation button{
+  margin-top: 20px;
+  margin-left: 45%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+
+}
+
+/* for customize data input */
+
+.formContainer{
+  height: 300px;
+  width: 100%;
+}
+
+form input[type=text], select, textarea {
+  width: 100%;
+  height: 30px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+form .rangeHolder{
+  margin: 10px 10px 10px;
+  width: 100%
+  padding:10px;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.checkBoxContainer h2{
+  color: #250f82;
+  font-family: "Roboto",sans-serif;
+}
+.checkBoxContainer p,label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.checkBoxContainer input {
+    margin: .4rem;
+}
+
+.simulationImageContainer{
+  padding: 20px;
+}

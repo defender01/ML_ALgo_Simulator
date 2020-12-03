@@ -1,0 +1,23 @@
+Learning rate 0.01
+Number of iterations: 19
+Current_x = 10.0 d/dx = 240.0
+Current_x = 7.6 d/dx = 127.68
+Current_x = 6.3232 d/dx = 82.0094
+Current_x = 5.5031 d/dx = 57.8337
+Current_x = 4.9248 d/dx = 43.2122
+Current_x = 4.4927 d/dx = 33.5969
+Current_x = 4.1567 d/dx = 26.8943
+Current_x = 3.8878 d/dx = 22.0182
+Current_x = 3.6676 d/dx = 18.3483
+Current_x = 3.4841 d/dx = 15.5123
+Current_x = 3.329 d/dx = 13.2727
+Current_x = 3.1963 d/dx = 11.4712
+Current_x = 3.0815 d/dx = 9.9979
+Current_x = 2.9816 d/dx = 8.7802
+Current_x = 2.8938 d/dx = 7.7594
+Current_x = 2.8162 d/dx = 6.8957
+Current_x = 2.7472 d/dx = 6.1581
+Current_x = 2.6856 d/dx = 5.5237
+Current_x = 2.6304 d/dx = 4.9746
+Current_x = 2.5806 d/dx = 4.4949
+Local minimum occurs at: 2.580649566686899
